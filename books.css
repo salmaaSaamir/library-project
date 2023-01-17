@@ -1,0 +1,502 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #e8e7e3;
+}
+/*  start header css */
+header{
+    background-image: url(../library/imgs/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 660px;
+    margin-bottom: 75px; 
+}
+header .nave {
+    background-color: rgb(70 71 35);
+    box-shadow: -1px lid red 11px 0px #404830;
+    position: fixed;               
+    width: 33.5%;                  
+    left: 75%;
+    top: 0px;
+    height: 657px; 
+}
+header .nave ul .nb,
+.nb_active{
+    text-align: center;
+    margin: 10% 0%;
+    list-style: none;
+}
+header .nave ul .nb_active{
+    text-shadow: 0px 4px 7px gainsboro;
+}
+header .nave ul li h1{
+    color: rgb(255 255 255 );
+    font-size: 25px;
+    text-transform:uppercase;
+    cursor: pointer;
+}
+header .nave ul li i {
+    color: rgb(255 255 255 );
+    position: relative;
+    top: 47px;
+    padding: 15px;
+    right: 115px;
+    font-size: 30px;
+    border: 1px solid rgb(255 255 255 );
+    border-right-style: none;
+}
+header div h2 {
+    animation-name: text;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    letter-spacing: 4px;
+    background-color: #989a5499;
+    padding: 12px;
+    margin: 20% 0px 0px 36%;
+    width: 50%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family: monospace;
+}
+header .head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header div p {
+    animation-name: text;
+    animation-duration: 4s;
+    animation-delay: 5s;
+    width: 50%;
+    margin: 4% 0px 10px 44%;
+    letter-spacing: 4px;
+    background-color: #989a5499;
+    padding: 12px;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: monospace;
+}
+@keyframes text{
+    30%{
+        letter-spacing: 6px;
+        padding: 15px;
+    }
+    60%{
+        letter-spacing: 4px;
+        padding: 12px;
+    }
+}
+header .nave ul .nb a{
+    text-decoration: none;
+}
+/* end header css */
+/* start main css */
+main section .bpage{
+    width: 25%;
+    height: 55px;
+    border-style: none;
+    font-size: 30px;
+    font-family: fangsong;
+    text-transform: capitalize;
+    color: #808146;
+    background-color: black;
+    border-radius: 15px;
+    margin-left: 33%;
+    text-decoration: none;
+    padding: 15px;
+}
+main .search p {
+    width: 35%;
+    height: 50px;
+    margin: 35px 22%;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    background-color: #e8e7e3;
+    border: 3px solid #a3a468;
+    font-family: emoji;
+    text-transform: capitalize;
+}
+main section h2{
+    width: 75%;
+    text-align: center;
+    font-size: 25px;
+    font-family:emoji;
+    text-transform: capitalize;
+    margin: 20px;
+    padding: 5px;
+}
+main section h2::before{
+    content:"_______________";
+    color: #989a54;
+    position: relative;
+    top: -10px;
+    left: -9px;
+}
+main section h2::after{
+    content:"_______________";
+    color: #989a54;
+    position: relative;
+    top: -10px;
+    right: -9px;
+}
+main .romance {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 75%;
+}
+main .romance  a .img_p1{
+    width: 200px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px 2px #989a54;
+}
+main .romance a .img_p1:hover{
+    filter: brightness(.8);
+}
+main .romance .inf{
+    display: flex; 
+    line-break: anywhere;
+    justify-content: flex-start;
+    justify-content: space-evenly;
+}
+main .romance .inf p {
+    margin: 15px 0px 35px 0px;
+    width: 24%;
+    padding: 7px;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: system-ui;
+}
+main .romance .inf p:hover{
+    background-color: #989a54;
+    border-radius: 5px;
+    font-weight:600;
+    color: rgb(255, 255, 255);
+    cursor: default;
+}
+main  span{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin-bottom: 30px;
+    justify-content: end;
+}
+main span p {
+    margin: 0px 20px;
+    padding: 10px;
+    background-color: #a3a468;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 12px 12px 12px 0px;
+    font-family: emoji;
+}
+main span a{
+    text-decoration: none;
+    color: black;
+}
+main span a .next:hover{
+    background-color: black;
+    color: #a3a468;
+    cursor: pointer;
+}
+/* end main css */
+
+/* start footer css */
+footer{
+    width: 75%;
+    background-color: #989a54db;
+    margin-top: 35px;
+}
+footer form{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+footer form label {
+    font-size: 25px;
+    margin: 10px 0px;
+    text-transform: capitalize;
+    font-family: serif;
+    padding: 0px 70px 0px;
+}
+footer form input {
+    width: 25%;
+    height: 55px;
+    font-size: 15px;
+    margin: 10px 40px;
+    border-style: none;
+    border-radius: 18px;
+    text-align: center;
+    background-color: #989a54db;
+    border-bottom: 2px solid rgb(49 42 42 / 48%);
+}
+form textarea:focus { 
+    outline: none !important;
+    border-style: none;
+    box-shadow:5px 7px 10px 0px rgb(49 42 42) ;
+}
+form input:focus{
+    outline: none !important;
+    border-style: none;
+    box-shadow:5px 7px 10px 0px rgb(49 42 42) ;
+}
+footer form .submit{
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    margin: 30px 45px -60px 45px;
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: black;
+    color:#989a54db ;
+}
+footer form textarea{
+    width: 263px;
+    text-align: center;
+    padding: 20px;
+    height: 72px;
+    overflow: hidden;
+    border-style: hidden;
+    border-radius: 5px;
+    background-color: rgba(152, 154, 84, 0.86);
+    border-bottom: 2px solid rgb(49 42 42 / 48%);
+    position: relative;
+    top: -260px;
+    left: 45%;
+    color: #75756b;
+    font-size: 18px;
+}
+footer section {
+    float: right;
+    margin: -37% 0px 0px 0px;
+    padding: 20px;
+    text-transform: capitalize;
+}
+footer section div{
+    font-size: 22px;
+    cursor: pointer;
+    padding: 30px 15px;
+    margin: -10px 0px 0px 0px;
+}
+/* end footer css */
+@media (max-width:767px){
+    header .nave ul li i {
+        top: 35px;
+        right: 70px;
+        font-size: 17px;
+    }
+    header .nave ul li h1 {
+        font-size: 17px;
+    }
+    header div h2 {
+        letter-spacing: 2px;
+        padding: 8px;
+        margin: 20% 0px 0px 7%;
+        font-size: 12px;
+    }
+    header div p {
+        margin: 4% 0px 10px 22%;
+        letter-spacing: 2px;
+        padding: 8px;
+        font-size: 11px;
+    }
+    @keyframes text{
+        30%{
+            letter-spacing: 4px;
+            padding: 12px;
+        }
+        60%{
+            letter-spacing: 2px;
+            padding: 8px;
+        }
+    }
+    main .search p {
+        width: 50%;
+        margin: 35px 12.5%;
+        font-size: 18px;
+        padding: 10px;
+    }
+    main section h2 {
+        font-size: 18px;
+    }
+    main section h2::before {
+        content: "___________";
+        top: -7px;
+    }
+    main section h2::after {
+        content: "___________";
+        top: -7px;
+    }
+    main .romance a .img_p1 {
+        width: 100px;
+        margin: 5px;
+    }
+    main .romance .inf p {
+        padding: 5px;
+        font-size: 10px;
+    }
+    main span p {
+        padding: 7px;
+        font-size: 15px;
+    }
+    main section .bpage {
+        font-size: 23px;
+        margin-left: 28%;
+        padding: 10px;
+    }
+    footer form label {
+        font-size: 20px;
+        /* margin: 10px 0px; */
+        padding: 0px 17px 0px;
+    }
+    footer form input {
+        width: 35%;
+        height: 45px;
+        margin: 10px 5px;
+    }
+    footer form .submit {
+        width: 135px;
+        height: 45px;
+        margin: 0px 0px 5px 12px;
+        font-size: 18px;
+    }
+    footer form textarea {
+        width: 170px;
+        padding: 20px;
+        height: 62px;
+        margin: 5px 0px 8px 5px;
+        position:inherit;
+        font-size: 15px;
+    }
+    footer section {
+        float: right;
+        margin: -85% 0px 0px 0px;
+    }
+    footer section div {
+        font-size: 18px;
+        padding: 30px 10px;
+    }
+}
+@media (max-width:1023px) and (min-width:768px){
+    header .nave ul li i {
+        right: 105px;
+    }
+    header .nave ul li h1 {
+        font-size: 20px;
+    }
+    header div h2 {
+        letter-spacing: 3px;
+        padding: 8px;
+        margin-top: 45% ;
+        font-size: 17px;
+    }
+    header div p {
+        letter-spacing: 3px;
+        padding: 8px;
+        margin-top: 5% ;
+        font-size: 16px;
+    }
+    @keyframes text{
+        30%{
+            letter-spacing: 4px;
+            padding: 12px;
+        }
+        60%{
+            letter-spacing: 3px;
+            padding: 8px;
+        }
+    }
+    main .search p {
+        font-size: 19px;
+        padding: 10px ;
+    }
+    main .romance a .img_p1 {
+        width: 145px;
+        margin: 10px;
+    }
+    main .romance .inf p {
+        font-size: 13px;
+        margin:15px 8px;
+    }
+    main span {
+        margin-bottom: 40px;
+    }
+    main span p {
+        padding: 7px;
+        font-size: 17px;
+    }
+    main section .bpage {
+        margin-left: 30%;
+        font-size: 25px;
+    }
+    footer form label {
+        font-size: 20px;
+        padding: 0px 30px 0px;
+    }
+    footer form input {
+        height: 50px;
+        margin: 10px 15px;
+    }
+    footer form .submit {
+        margin: 25px 0px 5px 25px;
+    }
+    footer form textarea {
+        width: 250px;
+        height: 67px;
+        top: -255px;
+        left: 35%;
+    }
+    footer section {
+        margin: -58% 0px 0px 0px;
+    }
+    footer section div {
+        font-size: 19px;
+        padding: 30px 3px;
+    }
+}
+@media (min-width:1024px) and (max-width:1280px){
+    header div h2 {
+        font-size: 22px;
+    }
+    header div p {
+        font-size: 18px;
+    }
+    main .romance a .img_p1 {
+        width: 185px;
+        margin: 5px;
+    }
+    main .romance .inf p {
+        margin: 15px 0px 20px 0px;
+    }
+    main span {
+        margin-bottom: 35px;
+    }
+    footer form label {
+        padding: 0px 30px 0px;
+    }
+    footer form input {
+        margin: 10px 15px;
+    }
+    footer form .submit {
+        margin: 30px 0px 0px 48px;
+    }
+    footer form textarea {
+        left: 35%;
+    }
+    footer section {
+        margin: -50% 0px 0px 0px;
+    }
+}

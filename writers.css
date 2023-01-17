@@ -1,0 +1,533 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #e8e7e3;
+}
+header{
+    background-image: url(../library/imgs/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 660px;
+    margin-bottom: 75px; 
+}
+header .nave {
+    background-color: rgb(70 71 35);
+    box-shadow: -1px lid red 11px 0px #404830;
+    position: fixed;               /* position: sticky; ???  */
+    width: 33.5%;                  
+    left: 75%;
+    top: 0px;
+    height: 657px; 
+}
+header .nave ul .nb,
+.nb_active{
+    text-align: center;
+    margin: 10% 0%;
+    list-style: none;
+}
+header .nave ul .nb_active{
+    text-shadow: 0px 4px 7px gainsboro;
+}
+header .nave ul li h1{
+    color: rgb(255 255 255 );
+    font-size: 25px;
+    text-transform:uppercase;
+    cursor: pointer;
+}
+header .nave ul li i {
+    color: rgb(255 255 255 );
+    position: relative;
+    top: 47px;
+    padding: 15px;
+    right: 115px;
+    font-size: 30px;
+    border: 1px solid rgb(255 255 255 );
+    border-right-style: none;
+}
+header div h2 {
+    animation-name: text;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    letter-spacing: 4px;
+    background-color: #989a5499;
+    padding: 12px;
+    margin: 20% 0px 0px 36%;
+    width: 50%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family: monospace;
+}
+header .head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header div p {
+    animation-name: text;
+    animation-duration: 4s;
+    animation-delay: 5s;
+    width: 50%;
+    margin: 4% 0px 10px 44%;
+    letter-spacing: 4px;
+    background-color: #989a5499;
+    padding: 12px;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: monospace;
+}
+@keyframes text{
+    30%{
+        letter-spacing: 6px;
+        padding: 15px;
+    }
+    60%{
+        letter-spacing: 4px;
+        padding: 12px;
+    }
+}
+header .nave ul .nb a{
+    text-decoration: none;
+}
+main section h2{
+    width: 75%;
+    margin: -30px 0px 40px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+}
+main section h2::before{
+    content: "______________________";
+    font-size: 20px;
+    color: #989a5499;
+    position: relative;
+    top: -13px;
+    right: 10px;
+}
+main section h2::after{
+    content: "______________________";
+    font-size: 20px;
+    color: #989a5499;
+    position: relative;
+    top: -13px;
+    left: 10px;
+}
+main section .n-w {
+    width: 72%;
+    margin: 50px 1.5%;
+    font-size: 24px;
+    font-family: serif;
+    padding: 20px 0px;
+    letter-spacing: 2px;
+    color: white;
+    border-radius: 25px;
+}
+main .writers {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px ;
+    margin-bottom: 30px;
+    background-image: url(../library/imgs/vintage-grungy-textured-wallpaper-design.jpg);
+}
+
+main .writers div{
+    display: flex;
+    flex-flow: column nowrap;
+}
+main .writers div img{
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: rgb(83 84 85) -5px 5px 7px 1px;
+}
+main .writers div h3,
+p,
+a{
+    font-size: 25px;
+    color: black;
+    text-transform: capitalize;
+    font-family: serif;
+    background-color: rgb(152 154 84 / 85%);
+    text-align: center;
+    padding: 15px 0px;
+}
+main .writers div h3{
+    width:30%;
+    margin: 20px;
+    border-radius: 0px 20px 20px 20px
+}
+main .writers div p{
+    width:50%;
+    margin: 20px 12.5%;
+    border-radius: 0px 30px 30px 30px;
+    padding: 15px;
+}
+main .writers div a{
+    text-decoration: none;
+    font-weight: bold;
+    width:25%;
+    margin: 20px 0px   0px 45%;
+    border-radius: 0px 20px 20px 20px;
+}
+main .writers div a:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 7px 3px 9px black;
+}
+main section .bpage{
+    width: 25%;
+    height: 55px;
+    border-style: none;
+    font-size: 30px;
+    font-family: fangsong;
+    text-transform: capitalize;
+    color: #808146;
+    background-color: black;
+    border-radius: 15px;
+    margin-left: 25%;
+    text-decoration: none;
+    padding: 15px;
+}
+/* start footer css */
+footer{
+    width: 75%;
+    background-color: #989a54db;
+    margin-top: 35px;
+}
+footer form{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+footer form label {
+    font-size: 25px;
+    margin: 10px 0px;
+    text-transform: capitalize;
+    font-family: serif;
+    padding: 0px 70px 0px;
+}
+footer form input {
+    width: 25%;
+    height: 55px;
+    font-size: 15px;
+    margin: 10px 40px;
+    border-style: none;
+    border-radius: 18px;
+    text-align: center;
+    background-color: #989a54db;
+    border-bottom: 2px solid rgb(49 42 42 / 48%);
+}
+form textarea:focus { 
+    outline: none !important;
+    border-style: none;
+    box-shadow:5px 7px 10px 0px rgb(49 42 42) ;
+}
+form input:focus{
+    outline: none !important;
+    border-style: none;
+    box-shadow:5px 7px 10px 0px rgb(49 42 42) ;
+}
+footer form .submit{
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    margin: 30px 45px -60px 45px;
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    background-color: black;
+    color:#989a54db ;
+}
+footer form textarea{
+    width: 263px;
+    text-align: center;
+    padding: 20px;
+    height: 72px;
+    overflow: hidden;
+    border-style: hidden;
+    border-radius: 5px;
+    background-color: rgba(152, 154, 84, 0.86);
+    border-bottom: 2px solid rgb(49 42 42 / 48%);
+    position: relative;
+    top: -260px;
+    left: 45%;
+    color: #75756b;
+    font-size: 18px;
+}
+footer section {
+    float: right;
+    margin: -37% 0px 0px 0px;
+    padding: 20px;
+    text-transform: capitalize;
+}
+footer section div p{
+    background-color: #a3a468;
+    text-align: inherit;
+}
+footer section div{
+    font-size: 22px;
+    cursor: pointer;
+    padding: 15px 30px;
+    margin: -10px 0px 0px 0px;
+}
+/* end footer css */ 
+@media (max-width:767px){
+    header .nave ul .nb, .nb_active{
+        margin: 12% 0%;
+    }
+    header .nave ul li h1 {
+        font-size: 15px;
+    }
+    header .nave ul li i {
+        top: 35px;
+        padding: 12px;
+        right: 70px;
+        font-size: 25px;
+    }
+    header div h2 {
+        letter-spacing: 2px;
+        padding: 8px;
+        font-size: 12px;
+        margin: 20% 0px 0px 25%;
+    }
+    header div p {
+        letter-spacing: 2px;
+        padding: 8px;
+        font-size: 12px;
+        font-weight: 700;
+        margin: 4% 0px 10px 36%;
+    }
+    @keyframes text{
+        30%{
+            letter-spacing: 3px;
+            padding: 10px;
+        }
+        60%{
+            letter-spacing: 2px;
+            padding: 8px;
+        }
+    }
+    main section h2 {
+        font-size: 12px;
+    }
+    main section h2::before {
+        content: "_________________";
+        font-size: 13px;
+        top: -8px;
+        right: 10px;
+    }
+    main section h2::after {
+        content: "_________________";
+        font-size: 13px;
+        color: #989a5499;
+        position: relative;
+        top: -8px;
+        left: 10px;
+    }
+    main .writers div img {
+        width: 200px;
+        height: 250px;
+    }
+    main section .n-w {
+        font-size: 18px;
+        border-radius: 20px;
+    }
+    main .writers div h3, p, a {
+        font-size: 15px;
+    }
+    main .writers div p {
+        width: 45%;
+        margin: 20px 15%;
+        padding: 8px;
+    }
+    main section .bpage {
+        font-size: 25px;
+        margin-left: 20%;
+        padding: 8px;
+    }
+    footer form label {
+        font-size: 15px;
+        padding: 0px 40px 0px;
+    }
+    footer form input {
+        width: 35%;
+        padding: 15px 0px;
+        font-size: 12px;
+        margin: 10px 25px;
+    }
+    footer form textarea {
+        width: 190px;
+        padding: 25px;
+        height: 65px;
+        top: -10px;
+        left: 20px;
+        font-size: 16px;
+    }
+    footer form .submit {
+        width: 140px;
+        border-radius: 20px;
+        margin: 15px 35px;
+        font-size: 20px;
+    }
+    footer section {
+        margin: -85% 0px 0px 0px;
+    }
+}
+@media (max-width:1023px) and (min-width:768px){
+    header .nave ul li i {
+        position: relative;
+        top: 45px;
+        right: 95px;
+        font-size: 25px;
+    }
+    header .nave ul li h1 {
+        font-size: 20px;
+    }
+    header div h2 {
+        letter-spacing: 3px;
+        font-size: 15px;
+    }
+    header div p {
+        letter-spacing: 3px;
+        font-size: 13px;
+        font-weight: 700;
+    }
+    @keyframes text{
+        30%{
+            letter-spacing: 4px;
+            padding: 15px;
+        }
+        60%{
+            letter-spacing: 3px;
+            padding: 12px;
+        }
+    }
+    main section h2 {
+        font-size: 18px;
+    }
+    main section h2::before {
+        content: "________________";
+        font-size: 15px;
+        top: -6px;
+        right: 6px;
+    }
+    main section h2::after {
+        content: "________________";
+        font-size: 15px;
+        top: -7px;
+        left: 7px;
+    }
+    main section .n-w {
+        font-size: 18px;
+        border-radius: 20px;
+    }
+    main .writers div img {
+        width: 220px;
+        height: 260px;
+    }
+    main .writers div h3 {
+        border-radius: 0px 15px 15px 15px;
+    }
+    main .writers div h3, p, a {
+        font-size: 18px;
+    }
+    main section .bpage {
+        font-size: 25px;
+        border-radius: 12px;
+        margin-left: 21%;
+    }
+    footer form label {
+        font-size: 20px;
+        margin: 10px 0px;
+        text-transform: capitalize;
+        font-family: serif;
+        padding: 0px 35px 0px;
+    }
+    footer form input {
+        width: 45%;
+        font-size: 15px;
+        margin: 10px 20px;
+    }
+    footer form .submit {
+        margin: 15px;
+        font-size: 20px;
+    }
+    footer form textarea {
+        width: 259px;
+        height: 52px;
+        top: -5px;
+        left: 15px;
+        font-size: 15px;
+    }
+    footer section {
+        margin: -65% 0px 0px 0px;
+    }
+}
+@media (max-width:1224px) and (min-width:1024px){
+    header div h2 {
+        font-size: 20px;
+    }
+    header div p {
+        font-size: 18px;
+    }
+    main section h2 {
+        font-size: 20px;
+    }
+    main section h2::before {
+        content: "______________________";
+        font-size: 16px;
+        top: -9px;
+        right: 10px;
+    }
+    main section h2::after {
+        content: "______________________";
+        font-size: 16px;
+        top: -7px;
+        left: 10px;
+    }
+    main section .n-w {
+        font-size: 18px;
+        border-radius: 20px;
+    }
+    main .writers div img {
+        width: 280px;
+        height: 320px;
+    }
+    main .writers div p {
+        padding: 7px;
+    }
+    main .writers div h3, p, a {
+        font-size: 22px;
+    }
+    footer form label {
+        font-size: 20px;;
+        padding: 0px 55px 0px;
+    }
+    footer form input {
+        width: 27%;
+        margin: 10px 35px;
+    }
+    footer form .submit {
+        margin: 15px 30px;
+    }
+    footer form textarea {
+        width: 255px;
+        height: 64px;
+        left: 325px;
+    }
+    footer section {
+        margin: -50% 0px 0px 0px;
+    }
+}
